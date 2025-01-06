@@ -15,6 +15,15 @@ app.get("/api", (req, res) =>{
 })
 
 
+app.post("/api/webhook", (req, res) => {
+    console.log("Webhook received:", req.body);
+
+    // Always respond quickly with a 200 status to acknowledge the webhook
+    res.status(200).send("Webhook received successfully!");
+});
+
+
+
 
 app.listen(port, () =>{
     console.log(`http://localhost:${port}`)
