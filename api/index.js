@@ -23,7 +23,7 @@ app.post("/api/webhook", (req, res) => {
 });
 
 // Route to simulate an action in your app (e.g., user sign-up)
-app.post("/user/signup", async (req, res) => {
+app.post("/api/user/signup", async (req, res) => {
     const userData = req.body;
 
     try {
